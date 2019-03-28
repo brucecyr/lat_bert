@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.10_x64/bin/nt64/moduleparser.exe -PROJ lat_bert_activeHDL -pf C:/lscc/diamond/3.10_x64/cae_library/synthesis/vhdl/ecp5um.vhd -lib ecp5um -pkg C:/lscc/diamond/3.10_x64/cae_library/vhdl_packages/vdbs -lst C:/git/lat_bert/simulation/lat_bert_activeHDL/source_files.lst

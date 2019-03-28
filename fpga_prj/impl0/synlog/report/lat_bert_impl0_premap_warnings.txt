@@ -1,0 +1,1 @@
+@W: MT529 :"c:\git\lat_bert\rtl_sources\prbs_loopback_top.v":42:0:42:5|Found inferred clock prbs_loopback_top|clk_in which controls 24 sequential elements including ctr[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

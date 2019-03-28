@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v":25:7:25:17|Synthesizing module prbs7x1_gen in library work.
+@N: CG364 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":25:7:25:17|Synthesizing module prbs7x1_chk in library work.
+@N: CG364 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":25:7:25:23|Synthesizing module prbs_loopback_top in library work.
+@N|Running in 64-bit mode
+

@@ -1,0 +1,14 @@
+[Version]
+Version=10.3
+[Designs]
+lat_bert_activeHDL=lat_bert_activeHDL.adf
+[Settings]
+Active=lat_bert_activeHDL
+[Expand]
+lat_bert_activehdl=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

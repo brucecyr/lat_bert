@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell prbs_loopback_top.verilog
+
+Register bits: 39 of 43848 (0%)
+PIC Latch:       0
+I/O cells:       5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13       100.0
+                            FD1P3BX       14       100.0
+                            FD1S3AX       25       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                                INV        3       100.0
+                                 OB        2       100.0
+                           ORCALUT4        5       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                        prbs7x1_chk        1       100.0
+                        prbs7x1_gen        1       100.0
+                            
+                         TOTAL            75           
+----------------------------------------------------------------------
+Report for cell prbs7x1_chk.netlist
+     Instance path:  prbs7x1_chk0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        7        50.0
+                           ORCALUT4        1        20.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            10           
+----------------------------------------------------------------------
+Report for cell prbs7x1_gen.netlist
+     Instance path:  prbs7x1_gen0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        7        50.0
+                           ORCALUT4        2        40.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            11           

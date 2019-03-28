@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs_loopback_top.v&quot;:62:34:62:41|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs_loopback_top.v</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs_loopback_top.v&quot;:68:14:68:21|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs_loopback_top.v</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>68</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs_loopback_top.v&quot;:76:14:76:21|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs_loopback_top.v</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:83:27:83:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>83</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>83</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:96:38:96:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>96</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>96</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:97:38:97:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>97</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>97</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_gen.v&quot;:31:28:31:37|Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Dynamic>
+            <Navigation>CS141</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_gen.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\git\lat_bert\rtl_sources\prbs_loopback_top.v&quot;:42:0:42:5|Found inferred clock prbs_loopback_top|clk_in which controls 24 sequential elements including ctr[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\git\lat_bert\rtl_sources\prbs_loopback_top.v</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock prbs_loopback_top|clk_in which controls 24 sequential elements including ctr[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock prbs_loopback_top|clk_in with period 2.59ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock prbs_loopback_top|clk_in with period 2.59ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

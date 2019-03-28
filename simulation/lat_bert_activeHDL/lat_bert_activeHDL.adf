@@ -1,0 +1,56 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+lat_bert_activeHDL=.\lat_bert_activeHDL\lat_bert_activeHDL.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_ecp5um
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+lat_bert_activeHDL=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\..\rtl_sources\prbs7x1_chk.v=-1
+/..\..\..\rtl_sources\prbs7x1_gen.v=-1
+/..\..\..\rtl_sources\prbs_loopback_top.v=-1
+/..\..\..\rtl_sources\sim_sources\prbs_loopback_top_tb.v=-1
+/..\..\out_of_the_box.asdb=-1
+/..\..\my_sigs.awc=-1
+[Files.Data]
+.\..\..\rtl_sources\prbs7x1_chk.v=Verilog Source Code
+.\..\..\rtl_sources\prbs7x1_gen.v=Verilog Source Code
+.\..\..\rtl_sources\prbs_loopback_top.v=Verilog Source Code
+.\..\..\rtl_sources\sim_sources\prbs_loopback_top_tb.v=Verilog Source Code
+.\..\out_of_the_box.asdb=Accelerated Waveform File
+.\..\my_sigs.awc=Accelerated Waveform Configuration
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

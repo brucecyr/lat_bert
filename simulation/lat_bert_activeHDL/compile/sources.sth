@@ -1,0 +1,6 @@
+[Files List]
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
+C:\git\lat_bert/rtl_sources/prbs7x1_chk.v=S
+C:\git\lat_bert/rtl_sources/prbs7x1_gen.v=S
+C:\git\lat_bert/rtl_sources/prbs_loopback_top.v=S
+C:\git\lat_bert/rtl_sources/sim_sources/prbs_loopback_top_tb.v=S

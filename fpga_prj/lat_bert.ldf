@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="lat_bert" device="LFE5UM5G-45F-8BG381C" default_implementation="impl0">
+    <Options/>
+    <Implementation title="impl0" dir="impl0" description="impl0" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="prbs_loopback_top" top="prbs_loopback_top"/>
+        <Source name="../rtl_sources/prbs_loopback_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="prbs_loopback_top"/>
+        </Source>
+        <Source name="../rtl_sources/prbs7x1_chk.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl_sources/prbs7x1_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../rtl_sources/prbs23x1_chk.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="../rtl_sources/prbs23x1_gen.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="../rtl_sources/sim_sources/prbs_loopback_top_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="lat_bert.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="../simulation/lat_bert_activeHDL/lat_bert_activeHDL.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lat_bert1.sty"/>
+</BaliProject>

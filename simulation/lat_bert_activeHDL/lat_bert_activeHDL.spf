@@ -1,0 +1,10 @@
+<BaliSimProject version="1.3" path="../simulation" stage="0" language="-1" name="lat_bert_activeHDL" simType="Active-HDL">
+    <Source worklib="work" path="../rtl_sources/prbs7x1_chk.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../rtl_sources/prbs7x1_gen.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../rtl_sources/prbs_loopback_top.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../rtl_sources/sim_sources/prbs_loopback_top_tb.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5um"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="prbs_loopback_top_tb"/>
+</BaliSimProject>

@@ -1,0 +1,20 @@
+[COMPILESTATUS|.\..\..\rtl_sources\prbs7x1_chk.v]
+FileTimeLow=30729616
+Status=Compiled
+[COMPILESTATUS|.\..\..\rtl_sources\prbs7x1_gen.v]
+FileTimeLow=30151541
+Status=Compiled
+[COMPILESTATUS|.\..\..\rtl_sources\prbs_loopback_top.v]
+FileTimeLow=30729451
+Status=Compiled
+[COMPILESTATUS|.\..\..\rtl_sources\sim_sources\prbs_loopback_top_tb.v]
+FileTimeLow=30729451
+Status=Compiled
+[COMPILESTATUS|.\..\out_of_the_box.asdb]
+FileTimeLow=30729620
+Status=Modified
+[COMPILESTATUS|.\..\my_sigs.awc]
+FileTimeLow=30729620
+Status=Modified
+[Gui config]
+RunFor=10000 ns

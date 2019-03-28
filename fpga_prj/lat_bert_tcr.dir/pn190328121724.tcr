@@ -1,0 +1,12 @@
+#Start recording tcl command: 3/28/2019 11:23:41
+#Project Location: C:/git/lat_bert/fpga_prj; Project name: lat_bert
+prj_project new -name "lat_bert" -impl "impl0" -dev LFE5UM5G-45F-8BG381C -synthesis "synplify"
+prj_src add "C:/git/lat_bert/rtl_sources/prbs_loopback_top.v" "C:/git/lat_bert/rtl_sources/prbs7x1_chk.v" "C:/git/lat_bert/rtl_sources/prbs7x1_gen.v" "C:/git/lat_bert/rtl_sources/prbs23x1_chk.v" "C:/git/lat_bert/rtl_sources/prbs23x1_gen.v" "C:/git/lat_bert/rtl_sources/sim_sources/prbs_loopback_top_tb.v"
+prj_project save
+prj_src syn_sim -src "C:/git/lat_bert/rtl_sources/sim_sources/prbs_loopback_top_tb.v" SimulateOnly
+prj_src exclude "C:/git/lat_bert/rtl_sources/prbs23x1_chk.v" "C:/git/lat_bert/rtl_sources/prbs23x1_gen.v"
+prj_run Synthesis -impl impl0 -task Synplify_Synthesis
+prj_src add "C:/git/lat_bert/simulation/lat_bert_activeHDL/lat_bert_activeHDL.spf"
+prj_project save
+prj_project close
+#Stop recording: 3/28/2019 12:17:24
