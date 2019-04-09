@@ -1,4 +1,4 @@
-timestamp=1554827506601
+timestamp=1554841787062
 
 [~A]
 C:/git/lat_bert/rtl_sources/prbs7x1_chk.v=0*375*920
@@ -7,56 +7,56 @@ C:/git/lat_bert/rtl_sources/prbs_loopback_top.v=0*3298*3993
 C:/git/lat_bert/rtl_sources/sim_sources/prbs_loopback_top_tb.v=0*4912*5478
 C:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_chk.v_prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*23101*25260
 LastVerilogToplevel=prbs_loopback_top_tb
-ModifyID=38
+ModifyID=44
 Version=74
-c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_chk.v_prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*124147*126354
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_chk.v_prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*150296*152775
 c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_gen.v=0*64210*64951
 c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*61785*63098
 c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs_loopback_top.v_prbs_loopback_top_tb.v=0*59248*60258
 c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/sim_sources/prbs_loopback_top_tb.v=0*57328*57978
 
 [$root]
-A/$root=22|||1*282474
-BinI32/$root=3*200076
-SLP=3*200180
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216d0af3c18a5cd87f79f23bca9a30bbdd8
+A/$root=22|||1*346402
+BinI32/$root=3*249443
+SLP=3*249547
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216c9bb5e79ab434e49d90d4044c05ec058
 
 [prbs7x1_chk]
-A/prbs7x1_chk=22|./../../../rtl_sources/prbs7x1_chk.v|27|1*282848
-BinI32/prbs7x1_chk=3*200248
+A/prbs7x1_chk=22|./../../../rtl_sources/prbs7x1_chk.v|27|1*346776
+BinI32/prbs7x1_chk=3*249615
 R=./../../../rtl_sources/prbs7x1_chk.v|27
-SLP=3*202090
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|5d3824b5921b130e043039e54c04e22231ba92d8e25eb21150cfab5c2eb6bdb1b36420cdf9b60e23c4a8b3eec43c2b64
+SLP=3*252274
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|5d3824b5921b130e043039e54c04e22231ba92d8e25eb21150cfab5c2eb6bdb1bd035c20ffe41a0b1eefef24c2fd053e
 
 [prbs7x1_gen]
-A/prbs7x1_gen=22|./../../../rtl_sources/prbs7x1_gen.v|28|1*286709
-BinI32/prbs7x1_gen=3*203570
+A/prbs7x1_gen=22|./../../../rtl_sources/prbs7x1_gen.v|28|1*351306
+BinI32/prbs7x1_gen=3*254154
 R=./../../../rtl_sources/prbs7x1_gen.v|28
-SLP=3*204829
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|88c82aace083a2f29a692d1826aa84cd3dbaa2c0d39f5b94d7437d94d837d9d5136f8e2dea65bed634482c27136305c3
+SLP=3*255412
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|88c82aace083a2f29a692d1826aa84cd3dbaa2c0d39f5b94d7437d94d837d9d52f171c962161e8ff5da396fcaa1a16a9
 
 [prbs_loopback_top]
-A/prbs_loopback_top=22|./../../../rtl_sources/prbs_loopback_top.v|27|1*288636
-BinI32/prbs_loopback_top=3*205301
+A/prbs_loopback_top=22|./../../../rtl_sources/prbs_loopback_top.v|27|1*353233
+BinI32/prbs_loopback_top=3*255884
 R=./../../../rtl_sources/prbs_loopback_top.v|27
-SLP=3*206058
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c045bfc015f83b6144d69bc83aa259a6955e1a65309197b855a69a23c929f6889
+SLP=3*256617
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c045bfc015f83b6144d69bc83aa259a6939c7ea5888c3fd17b6d3a4fb2eeb664e
 
 [prbs_loopback_top_tb]
-A/prbs_loopback_top_tb=22|./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|27|1*291133
-BinI32/prbs_loopback_top_tb=3*206435
+A/prbs_loopback_top_tb=22|./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|27|1*355730
+BinI32/prbs_loopback_top_tb=3*256994
 R=./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|27
-SLP=3*207065
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c5da105e688d1391e5f31ab7659116bd73cc26b8573523e4e5c473c2f744e98db
+SLP=3*257624
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c5da105e688d1391e5f31ab7659116bd72cedaff005a1f4cf217221c0c784471e
 
 [~MFT]
-0=9|0work.mgf|126354|73524
-1=10|1work.mgf|291133|282474
-3=20|3work.mgf|207065|200076
+0=9|0work.mgf|152775|92104
+1=10|1work.mgf|355730|346402
+3=20|3work.mgf|257624|249443
 
 [~U]
-$root=12|0*122920|
-prbs7x1_chk=12|0*123118|
-prbs7x1_gen=12|0*123450|
-prbs_loopback_top=12|0*123702|
-prbs_loopback_top_tb=12|0*123950||0x10
+$root=12|0*149032|
+prbs7x1_chk=12|0*149230|
+prbs7x1_gen=12|0*149600|
+prbs_loopback_top=12|0*149851|
+prbs_loopback_top_tb=12|0*150099||0x10

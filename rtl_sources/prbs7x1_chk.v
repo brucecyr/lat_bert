@@ -31,19 +31,20 @@ output wire error,	// error detected
 input wire prbs_in	// data stream to be compared
 );
 
-// wires
+// regs
 reg prbs_rstn	;
 reg efc_rstn	;
 reg efc_en		;
 reg ec_rstn		;	
 reg ec_en		;
 reg bert_synched;
+reg encr_bit_position;
 
 
 //-----------------------------
 // DESIGN PARAMETERS
 //-----------------------------
-parameter [2:0] PRBS_PATTERN			= 7
+parameter [2:0] PRBS_PATTERN			= 7	;
 parameter [7:0] SEQUENCE_LENGTH 		= 2^PRBS_PATTERN - 1;			// PRBS-7 sequence is 127 Bits long
 parameter [6:0] CLOCKS_ASSUME_SYNCH = 63;		// How many clocks will we wait to check if streams are synch'ed
 parameter [6:0] ERROR_CNT_TERM_VAL = 65535;		// 
@@ -54,9 +55,10 @@ parameter [6:0] ERROR_CNT_TERM_VAL = 65535;		//
 // FSM PARAMETERS
 //-----------------------------
 parameter [2:0] IDLE = 0;				// Initial state
-parameter [2:0] TEST_SYNCH = 1;			// shifting local prbs to align with incoming stream
-parameter [2:0] ADD_DELAY = 2;			// Streams are aligned and we are checking for errors
-parameter [2:0] BERT_TEST = 3;			// Streams synch'ed; Count errors
+parameter [2:0] TEST_SYNCH = 1;			// checking for errors to see if synch'ed
+parameter [2:0] ADD_DELAY = 2;			// shift local compare pattern by one bit time
+parameter [2:0]	WAIT_FOR_CNT_ALIGN = 3;	// wait for last shift to occur so we can then move to TEST_SYNCH
+parameter [2:0] BERT_TEST = 4;			// Streams synch'ed; Count errors
 // parameter [3:0] STRADDLED_0TO1 = 4 ;
 // parameter [3:0] STRADDLED_1TO0 = 5 ;
 
@@ -67,19 +69,18 @@ parameter [2:0] BERT_TEST = 3;			// Streams synch'ed; Count errors
 
 // This counter will count as high as the number of bits in a given prbs sequence. For example prbs-7 repeats every
 // 127 bits so the counter will count from 0 to 126.
-reg [PRBS_PATTERN-1:0] pattern_count;
+reg [PRBS_PATTERN-1:0] pattern_count ;
 always@(posedge clk or negedge rstn)
 	begin
 		if (~rstn)
 			pattern_count <= 0;
 		else 
-			begin
-				if (ec_en)
-					pattern_count <= pattern_count + 1;
-			end
+			pattern_count <= pattern_count + 1;
 	end
-// Counts number of errors
-reg [15:0] error_counter;always@(posedge clk or negedge ec_rstn)
+			
+// Counts number of errors
+reg [15:0] error_counter;
+always@(posedge clk or negedge ec_rstn)
 	begin
 		if (~ec_rstn)
 			error_counter <= 0;
@@ -135,10 +136,16 @@ always@(*)
             end
 
            ADD_DELAY: begin  // 2
-                bert_next_state = TEST_SYNCH;
+                bert_next_state = WAIT_FOR_CNT_ALIGN;
             end
 			
-			BERT_TEST: begin  // 3
+			WAIT_FOR_CNT_ALIGN: begin	// 3
+				bert_next_state = WAIT_FOR_CNT_ALIGN;
+				if (pattern_bit_position == pattern_count)  
+                    bert_next_state = TEST_SYNCH;
+			end
+			
+			BERT_TEST: begin  // 4
                 bert_next_state = BERT_TEST;
                 if (error_counter == 65535)  
                     bert_next_state = TEST_SYNCH;
@@ -161,6 +168,7 @@ always@(*)
 				ec_rstn			= 0;
 				ec_en			= 0;
 				bert_synched	= 0;
+				encr_bit_position = 0;
 //				bert_error		= 0;
             end
 
@@ -171,6 +179,7 @@ always@(*)
 				ec_rstn			= 0;
 				ec_en			= 0;
 				bert_synched	= 0;
+				encr_bit_position = 0;
 //				bert_error		= 0;
             end
 
@@ -181,21 +190,48 @@ always@(*)
 				ec_rstn			= 0;
 				ec_en			= 0;
 				bert_synched	= 0;
+				encr_bit_position = 1;
 //				bert_error		= 0;
             end
 			
-			BERT_TEST: begin  // 3
+			WAIT_FOR_CNT_ALIGN: begin  // 3
+				prbs_rstn		= 0;
+				efc_rstn		= 0;
+				efc_en			= 1;
+				ec_rstn			= 0;
+				ec_en			= 0;
+				bert_synched	= 0;
+				encr_bit_position = 0;
+//				bert_error		= 0;
+            end
+			
+			BERT_TEST: begin  // 4
 				prbs_rstn		= 1;
                 efc_rstn		= 1;
 				efc_en			= 0;
 				ec_rstn			= 1;
 				ec_en			= 1;
 				bert_synched	= 1;
+				encr_bit_position = 0;
 //				bert_error		= 0;
             end
 		endcase	
 	end
 
+// the pattern_bit_position is where we are going to attempt to synch with the incoming prbs pattern
+// Each time we fail to synch we increment the bit position and try again.
+reg [PRBS_PATTERN-1:0] pattern_bit_position ;
+always@(posedge clk or negedge rstn)
+begin
+	if(~rstn)
+		begin
+			pattern_bit_position<=0;
+		end
+	else if (encr_bit_position)
+		begin
+			pattern_bit_position<=pattern_bit_position+1;
+		end
+end
 
 reg [6:0] col_chk /* synthesis dont_merge preserve*/;
 wire      fb_chk;
