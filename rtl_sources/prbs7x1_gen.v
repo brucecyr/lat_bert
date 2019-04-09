@@ -22,27 +22,61 @@
 //// POSSIBILITY OF SUCH DAMAGE.                                 ////
 ////                                                             ////
 ///////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
+//`define SYNTHESIS
 module prbs7x1_gen(
 input wire clk,
 input wire noise,
-input wire reset,
+input wire rstn,
 output wire prbs_out
 );
-reg [6:0] col  /* synthesis dont_merge preserve*/;
-wire      fb;
-always@(posedge clk or posedge reset)
+reg [6:0] col_gen  /* synthesis dont_merge preserve*/;
+wire      fb_gen;
+
+
+`ifdef SYNTHESIS
+always@(posedge clk or negedge rstn)
 begin
-	if(reset)
+	if(~rstn)
 		begin
-			col<=7'b1111111;
+			col_gen<=7'b1111111;
 		end
 	else
 		begin
-			col<={fb,col[6:1]};
+			col_gen<={fb_gen,col_gen[6:1]};
 		end
 end
-assign fb=col[0]^col[6];
-assign prbs_out=col[6] | noise;
+assign fb_gen=col_gen[0]^col_gen[6];
+assign prbs_out=col_gen[6] ; //| noise;
+
+`else
+reg seq_delay = 0;
+parameter CLOCK_PERIOD = 10;
+parameter CLOCK_DELAYS = 119;
+initial begin
+	@(posedge rstn)
+	begin
+		#(CLOCK_PERIOD*CLOCK_DELAYS);
+//		@(posedge clk)
+			seq_delay = 1;
+	end
+end		
+	
+always@(posedge clk or negedge rstn)
+begin
+	if(~seq_delay || ~rstn)
+		begin
+			col_gen<=7'b1111111;
+		end
+	else
+		begin
+			col_gen<={fb_gen,col_gen[6:1]};
+		end
+end
+assign fb_gen=col_gen[0]^col_gen[6];
+assign prbs_out=col_gen[6] ; // | noise;
+`endif
 
 endmodule
 

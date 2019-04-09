@@ -22,6 +22,8 @@
 //// POSSIBILITY OF SUCH DAMAGE.                                 ////
 ////                                                             ////
 ////////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
 module prbs_loopback_top(
 input wire clk_in,
 input wire rstn_in,		// active low
@@ -31,9 +33,9 @@ output wire led14		// bert error
 //output wire led13		// not used
 );
 
-//invert reset
-wire rst;
-assign rst=~rstn_in;
+//rename reset
+wire rstn;
+assign rstn = rstn_in;
 
 
 //clk div
@@ -46,11 +48,12 @@ end
 assign led15=ctr[23];
 
 wire clk2x;		// change to clk2x from clk_div2
-wire clk;		// change to clk from clk_div4
+//wire clk;		// change to clk from clk_div4
+wire clk = clk_in; // 10nsec period
 wire clk_div2;	// change to clk_div2 from clk_div8
 
 assign clk2x=ctr[0];
-assign clk=ctr[1];
+//assign clk=ctr[1];
 assign clk_div2=ctr[2];
 
 //test pin
@@ -63,14 +66,14 @@ wire prbs7_x1_signal /* synthesis preserve */;
 prbs7x1_gen prbs7x1_gen0(
 	.clk(clk),
 	.noise(test),
-	.reset(rst),
+	.rstn(rstn),
 	.prbs_out(prbs7_x1_signal)
 )/* synthesis preserve */;
 
 //prbs 7x1_chk0
 prbs7x1_chk prbs7x1_chk0(
 	.clk(clk),
-	.reset(rst),
+	.rstn(rstn),
 	.error(led14),
 	.prbs_in(prbs7_x1_signal)
 )/* synthesis preserve */;

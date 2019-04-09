@@ -3,11 +3,14 @@ Current Flow=Generic
 VCS=0
 version=3
 Current Config=compile
+
 [Configurations]
 compile=work
+
 [Library]
 lat_bert_activeHDL=.\lat_bert_activeHDL\lat_bert_activeHDL.lib
 work=.\work\work.lib
+
 [Settings]
 AccessRead=1
 AccessReadWrite=0
@@ -20,37 +23,152 @@ ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
+AddGeneratedFilesToDesignBrowser=0
+DesignStatusPath=$dsn\src\DESIGN_STATUS
+DesignActivationScript=$dsn\design.do
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
 PriorityLibNames=pmi_work
 LibNames=ovi_ecp5um
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 lat_bert_activeHDL=.
 work=.
+
 [LocalVerilogDirs]
 Count=0
+
 [DefineMacro]
 Global=
+
+[SpecTracer]
+WindowVisible=0
+UseConceptualDesignTags=0
+HDLCounter=000
+HDLMotive=FPGA to DD
+HDLPostfix=
+HDLPrefix=HDL_
+HDLBlock=Detail Design
+CDCounter=000
+CDMotive=FPGA to CD
+CDPostfix=
+CDPrefix=CD_
+CDBlock=Conceptual Design
+SelectedREQ=
+SelectedTC=
+TBCounter=000
+TBMotive=Test to TB
+TBPostfix=
+TBPrefix=TB_
+TBBlock=Test Bench
+SessionsEnabled=0
+TestSessionsBlock=Test Sessions
+TestSessionsMotive=Run to Session
+TestSessionsPrefix=TS_Session_
+TestSessionsDateandtime=%Y_%m_%d_%H:%M
+TestSessionsPostfix=
+TestrunsBlock=Test Runs
+TestrunsMotive=Test to Run
+TestCounter=000
+TestPostfix=
+TestPrefix=TST_
+AttributeName=
+ResultPostfix=
+ResultPrefix=
+ResultRegExp=
+AttributeName2=
+ResultPostfix2=
+ResultPrefix2=
+ResultRegExp2=
+AttributeName3=
+ResultPostfix3=
+ResultPrefix3=
+ResultRegExp3=
+AttributeName4=
+ResultPostfix4=
+ResultPrefix4=
+ResultRegExp4=
+AttributeName5=
+ResultPostfix5=
+ResultPrefix5=
+ResultRegExp5=
+UnknownName=
+UnknownName2=
+UnknownName3=
+UnknownName4=
+UnknownName5=
+BranchCoverageAttr=
+StatementCoverageAttr=
+ExpressionCoverageAttr=
+AssertionCoverageAttr=
+CovergroupCoverageAttr=
+DirectiveCoverageAttr=
+HierarchicalCoverage=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /..\..\..\rtl_sources\prbs7x1_chk.v=-1
 /..\..\..\rtl_sources\prbs7x1_gen.v=-1
 /..\..\..\rtl_sources\prbs_loopback_top.v=-1
 /..\..\..\rtl_sources\sim_sources\prbs_loopback_top_tb.v=-1
 /..\..\out_of_the_box.asdb=-1
-/..\..\my_sigs.awc=-1
+/my_sigs.awc=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+
 [Files.Data]
 .\..\..\rtl_sources\prbs7x1_chk.v=Verilog Source Code
 .\..\..\rtl_sources\prbs7x1_gen.v=Verilog Source Code
 .\..\..\rtl_sources\prbs_loopback_top.v=Verilog Source Code
 .\..\..\rtl_sources\sim_sources\prbs_loopback_top_tb.v=Verilog Source Code
 .\..\out_of_the_box.asdb=Accelerated Waveform File
-.\..\my_sigs.awc=Accelerated Waveform Configuration
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=
+.\src\my_sigs.awc=Accelerated Waveform Configuration
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+
+[DesignStructure]
+BlockDiagram=.\src
+StateDiagram=.\src
+VHDLSourceCode=.\src
+EDIFSchematic=.\src
+ExternalFile=.\src
+EDIFNetlist=.\src
+PerlScript=.\src
+ListFile=.\src
+VerilogSourceCode=.\src
+SymbolSheet=.\src
+Cpp=.\src
+SDF=.\src
+HTMLDocument=.\src
+Macro=.\src
+WaveformASDBAWC=.\src
+Waveform=.\src
+SystemVerilogSourceCode=.\src
+ActiveCADTestVectors=.\src
+TclScript=.\src
+WaveformASDBC=.\src
+Drawing=.\src
+Text=.\src
+WaveformASDB=.\src
+PslSourceCode=.\src
+adc=.\src
+OvaSourceCode=.\src
+MemFile=.\src
+GenerateToCustomFolder=0
+[Generics]
+Count=0

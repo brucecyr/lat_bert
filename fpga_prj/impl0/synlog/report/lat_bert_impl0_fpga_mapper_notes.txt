@@ -1,9 +1,15 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
-@N: FX271 :"c:\git\lat_bert\rtl_sources\prbs_loopback_top.v":42:0:42:5|Replicating instance ctr[0] (in view: work.prbs_loopback_top(verilog)) with 4 loads 1 time to improve timing.
+@N: MO225 :"c:\git\lat_bert\rtl_sources\prbs7x1_chk.v":92:0:92:5|There are no possible illegal states for state machine bert_state[3:0] (in view: work.prbs7x1_chk(verilog)); safe FSM implementation is not required.
+@N: MF578 :"c:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Incompatible asynchronous control logic preventing generated clock conversion of prbs7x1_chk0.prbs_rstn (in view: work.prbs_loopback_top(verilog)).
+@N: BN362 :"c:\git\lat_bert\rtl_sources\prbs7x1_chk.v":92:0:92:5|Removing sequential instance prbs7x1_chk0.bert_state[1] (in view: work.prbs_loopback_top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\git\lat_bert\rtl_sources\prbs7x1_chk.v":92:0:92:5|Removing sequential instance prbs7x1_chk0.bert_state[0] (in view: work.prbs_loopback_top(verilog)) because it does not drive other instances.
+@N: FX271 :"c:\git\lat_bert\rtl_sources\prbs_loopback_top.v":42:0:42:5|Replicating instance ctr[0] (in view: work.prbs_loopback_top(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"c:\git\lat_bert\rtl_sources\prbs_loopback_top.v":42:0:42:5|Replicating instance ctr[1] (in view: work.prbs_loopback_top(verilog)) with 4 loads 1 time to improve timing.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: MT611 :|Automatically generated clock prbs_loopback_top|ctr_derived_clock[1] is not used and is being removed
+@N: MT617 :|Automatically generated clock prbs7x1_chk|bert_state_derived_clock[3] has lost its master clock prbs_loopback_top|ctr_derived_clock[1] and is being removed
 @N: FX1056 |Writing EDF file: C:\git\lat_bert\fpga_prj\impl0\lat_bert_impl0.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

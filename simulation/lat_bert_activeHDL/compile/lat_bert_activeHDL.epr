@@ -1,1 +1,4 @@
-"../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v"	1
+"../../../rtl_sources/prbs_loopback_top.v"	0
+"../../../rtl_sources/prbs7x1_gen.v"	0
+"../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v"	0
+"../../../rtl_sources/prbs7x1_chk.v"	0

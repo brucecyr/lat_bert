@@ -1,4 +1,4 @@
-Active-HDL 10.3.3558.6081  2019-03-28 11:29:11
+Active-HDL 10.3.3558.6081  2019-04-09 10:32:05
 
 Elaboration top modules:
 Verilog Module                prbs_loopback_top_tb
@@ -7,10 +7,10 @@ Verilog Module                prbs_loopback_top_tb
 -------------------------------------------------------------------------------------------
 Verilog Module          | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-prbs_loopback_top_tb    | work    |      | 10.3.3558.6081  (Windows) | -dbg
-prbs_loopback_top       | work    |      | 10.3.3558.6081  (Windows) | -dbg
-prbs7x1_gen             | work    |      | 10.3.3558.6081  (Windows) | -dbg
-prbs7x1_chk             | work    |      | 10.3.3558.6081  (Windows) | -dbg
+prbs_loopback_top_tb    | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+prbs_loopback_top       | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+prbs7x1_gen             | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+prbs7x1_chk             | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------

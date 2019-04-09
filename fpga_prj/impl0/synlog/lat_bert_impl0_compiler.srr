@@ -17,34 +17,51 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":68:14:68:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
 @W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":76:14:76:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
 @I::"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v" (library work)
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":83:27:83:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":96:38:96:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":97:38:97:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":181:27:181:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":194:38:194:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":195:38:195:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
 @I::"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v" (library work)
 @W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v":31:28:31:37|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
 Verilog syntax check successful!
 Selecting top level module prbs_loopback_top
 @N: CG364 :"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v":25:7:25:17|Synthesizing module prbs7x1_gen in library work.
 @N: CG364 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":25:7:25:17|Synthesizing module prbs7x1_chk in library work.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal prbs_rstn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal efc_rstn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal efc_en; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal ec_rstn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal ec_en; possible missing assignment in an if or case statement.
+@W: CL177 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Sharing sequential element ec_en. Add a syn_preserve attribute to the element to prevent sharing.
 @N: CG364 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":25:7:25:23|Synthesizing module prbs_loopback_top in library work.
+@N: CL201 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":92:0:92:5|Trying to extract state machine for register bert_state.
+Extracted state machine for register bert_state
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch ec_rstn enable evaluates to constant 1, optimized
+@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch efc_en enable evaluates to constant 1, optimized
+@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch efc_rstn enable evaluates to constant 1, optimized
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 28 11:25:15 2019
+# Thu Mar 28 20:27:48 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
+File C:\git\lat_bert\fpga_prj\impl0\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 28 11:25:15 2019
+# Thu Mar 28 20:27:48 2019
 
 ###########################################################]
 @END
@@ -54,6 +71,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 28 11:25:15 2019
+# Thu Mar 28 20:27:48 2019
 
 ###########################################################]

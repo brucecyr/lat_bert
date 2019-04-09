@@ -22,23 +22,25 @@
 //// POSSIBILITY OF SUCH DAMAGE.                                 ////
 ////                                                             ////
 ///////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
 module prbs_loopback_top_tb();
 
-reg clk=0;
-reg rst=0;
+reg clk=1;
+reg rstn=0;
 reg tst=0;
 wire led15;
 wire x2_result;
 wire x4_result;
 
 // Create the PLL reference clock
-always #(10000/2) clk <= ~clk;
+always #(10/2) clk <= ~clk; // 10nsec period
 
 
 //dut
 prbs_loopback_top DUT(
 	.clk_in(clk),
-	.rstn_in(rst),
+	.rstn_in(rstn),
 	.testn_in(tst),
 	.led15(led15),
 	.led14(x2_result)
@@ -46,10 +48,10 @@ prbs_loopback_top DUT(
 );
 
 initial begin
+#40;
+rstn=1'b0;
 #100;
-rst=1'b0;
-#2000;
-rst=1'b1; //actual board push button active=0
+rstn=1'b1; // what is board push button??
 #1000;
 tst=1'b0;
 #5000;

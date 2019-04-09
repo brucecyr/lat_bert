@@ -1,0 +1,12 @@
+
+fsm_encoding {7920921} sequential
+
+fsm_state_encoding {7920921} IDLE {00}
+
+fsm_state_encoding {7920921} TEST_SYNCH {01}
+
+fsm_state_encoding {7920921} ADD_DELAY {10}
+
+fsm_state_encoding {7920921} BERT_TEST {11}
+
+fsm_registers {7920921} {bert_state[1]}  {bert_state[0]} 

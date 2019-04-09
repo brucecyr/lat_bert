@@ -1,1 +1,2 @@
-@W: MT420 |Found inferred clock prbs_loopback_top|clk_in with period 2.59ns. Please declare a user-defined clock on object "p:clk_in"
+@W: BN137 :|Found combinational loop during mapping at net G_137
+@W: MT420 |Found inferred clock prbs_loopback_top|clk_in with period 2.66ns. Please declare a user-defined clock on object "p:clk_in"

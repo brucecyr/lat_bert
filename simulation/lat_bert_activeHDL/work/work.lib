@@ -1,56 +1,62 @@
-timestamp=1553797689495
+timestamp=1554827506601
 
 [~A]
 C:/git/lat_bert/rtl_sources/prbs7x1_chk.v=0*375*920
 C:/git/lat_bert/rtl_sources/prbs7x1_gen.v=0*1817*2346
 C:/git/lat_bert/rtl_sources/prbs_loopback_top.v=0*3298*3993
 C:/git/lat_bert/rtl_sources/sim_sources/prbs_loopback_top_tb.v=0*4912*5478
+C:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_chk.v_prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*23101*25260
 LastVerilogToplevel=prbs_loopback_top_tb
-ModifyID=4
+ModifyID=38
 Version=74
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_chk.v_prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*124147*126354
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_gen.v=0*64210*64951
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs7x1_gen.v_prbs_loopback_top.v_prbs_loopback_top_tb.v=0*61785*63098
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/prbs_loopback_top.v_prbs_loopback_top_tb.v=0*59248*60258
+c:/git/lat_bert/simulation/lat_bert_activeHDL/../../rtl_sources/sim_sources/prbs_loopback_top_tb.v=0*57328*57978
 
 [$root]
-A/$root=22|||1*6468
-BinI32/$root=3*3948
-SLP=3*4052
-Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|c73a565f2ade592f8ac1c68f484c92161f63c52bd105bbb473d8b70a10e25a4b
+A/$root=22|||1*282474
+BinI32/$root=3*200076
+SLP=3*200180
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216d0af3c18a5cd87f79f23bca9a30bbdd8
 
 [prbs7x1_chk]
-A/prbs7x1_chk=22|./../../../rtl_sources/prbs7x1_chk.v|25|1*374
-BinI32/prbs7x1_chk=3*172
-R=./../../../rtl_sources/prbs7x1_chk.v|25
-SLP=3*903
-Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|5d3824b5921b130e043039e54c04e22231ba92d8e25eb21150cfab5c2eb6bdb165f622d77dc7ef0acb4324874889c578
+A/prbs7x1_chk=22|./../../../rtl_sources/prbs7x1_chk.v|27|1*282848
+BinI32/prbs7x1_chk=3*200248
+R=./../../../rtl_sources/prbs7x1_chk.v|27
+SLP=3*202090
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|5d3824b5921b130e043039e54c04e22231ba92d8e25eb21150cfab5c2eb6bdb1b36420cdf9b60e23c4a8b3eec43c2b64
 
 [prbs7x1_gen]
-A/prbs7x1_gen=22|./../../../rtl_sources/prbs7x1_gen.v|25|1*2187
-BinI32/prbs7x1_gen=3*1429
-R=./../../../rtl_sources/prbs7x1_gen.v|25
-SLP=3*2125
-Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|88c82aace083a2f29a692d1826aa84cd3dbaa2c0d39f5b94d7437d94d837d9d5f932caf613abef3bab0e601161c329a0
+A/prbs7x1_gen=22|./../../../rtl_sources/prbs7x1_gen.v|28|1*286709
+BinI32/prbs7x1_gen=3*203570
+R=./../../../rtl_sources/prbs7x1_gen.v|28
+SLP=3*204829
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|88c82aace083a2f29a692d1826aa84cd3dbaa2c0d39f5b94d7437d94d837d9d5136f8e2dea65bed634482c27136305c3
 
 [prbs_loopback_top]
-A/prbs_loopback_top=22|./../../../rtl_sources/prbs_loopback_top.v|25|1*3988
-BinI32/prbs_loopback_top=3*2650
-R=./../../../rtl_sources/prbs_loopback_top.v|25
-SLP=3*3563
-Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|a4c547a00accb8256728f3ee2375448c045bfc015f83b6144d69bc83aa259a69c774f01414b46729535ecb8b34d18333
+A/prbs_loopback_top=22|./../../../rtl_sources/prbs_loopback_top.v|27|1*288636
+BinI32/prbs_loopback_top=3*205301
+R=./../../../rtl_sources/prbs_loopback_top.v|27
+SLP=3*206058
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c045bfc015f83b6144d69bc83aa259a6955e1a65309197b855a69a23c929f6889
 
 [prbs_loopback_top_tb]
-A/prbs_loopback_top_tb=22|./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|25|1*6858
-BinI32/prbs_loopback_top_tb=3*4120
-R=./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|25
-SLP=3*4741
-Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|a4c547a00accb8256728f3ee2375448c5da105e688d1391e5f31ab7659116bd7c28f10cd5ff2ef6d2d57021f30a3a586
+A/prbs_loopback_top_tb=22|./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|27|1*291133
+BinI32/prbs_loopback_top_tb=3*206435
+R=./../../../rtl_sources/sim_sources/prbs_loopback_top_tb.v|27
+SLP=3*207065
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a4c547a00accb8256728f3ee2375448c5da105e688d1391e5f31ab7659116bd73cc26b8573523e4e5c473c2f744e98db
 
 [~MFT]
-0=4|0work.mgf|5478|0
-1=3|1work.mgf|6858|1138
-3=6|3work.mgf|4741|516
+0=9|0work.mgf|126354|73524
+1=10|1work.mgf|291133|282474
+3=20|3work.mgf|207065|200076
 
 [~U]
-$root=12|0*4537|
-prbs7x1_chk=12|0*166||0x10
-prbs7x1_gen=12|0*1608||0x10
-prbs_loopback_top=12|0*3050||0x10
-prbs_loopback_top_tb=12|0*4735||0x10
+$root=12|0*122920|
+prbs7x1_chk=12|0*123118|
+prbs7x1_gen=12|0*123450|
+prbs_loopback_top=12|0*123702|
+prbs_loopback_top_tb=12|0*123950||0x10

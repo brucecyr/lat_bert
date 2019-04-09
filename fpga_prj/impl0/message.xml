@@ -44,36 +44,36 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:83:27:83:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Dynamic>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:181:27:181:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Dynamic>
             <Navigation>CS141</Navigation>
             <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
-            <Navigation>83</Navigation>
+            <Navigation>181</Navigation>
             <Navigation>27</Navigation>
-            <Navigation>83</Navigation>
+            <Navigation>181</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Unrecognized synthesis directive dont_merge. Verify the correct directive name.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:96:38:96:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:194:38:194:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
             <Navigation>CS141</Navigation>
             <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
-            <Navigation>96</Navigation>
+            <Navigation>194</Navigation>
             <Navigation>38</Navigation>
-            <Navigation>96</Navigation>
+            <Navigation>194</Navigation>
             <Navigation>45</Navigation>
             <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:97:38:97:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
+            <Dynamic>CS141 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:195:38:195:45|Unrecognized synthesis directive preserve. Verify the correct directive name.</Dynamic>
             <Navigation>CS141</Navigation>
             <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
-            <Navigation>97</Navigation>
+            <Navigation>195</Navigation>
             <Navigation>38</Navigation>
-            <Navigation>97</Navigation>
+            <Navigation>195</Navigation>
             <Navigation>45</Navigation>
             <Navigation>Unrecognized synthesis directive preserve. Verify the correct directive name.</Navigation>
         </Message>
@@ -92,6 +92,114 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch generated from always block for signal prbs_rstn; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch generated from always block for signal prbs_rstn; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch generated from always block for signal efc_rstn; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch generated from always block for signal efc_rstn; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch generated from always block for signal efc_en; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch generated from always block for signal efc_en; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch generated from always block for signal ec_rstn; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch generated from always block for signal ec_rstn; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch generated from always block for signal ec_en; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch generated from always block for signal ec_en; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL177 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Sharing sequential element ec_en. Add a syn_preserve attribute to the element to prevent sharing.</Dynamic>
+            <Navigation>CL177</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Sharing sequential element ec_en. Add a syn_preserve attribute to the element to prevent sharing.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL239 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch ec_rstn enable evaluates to constant 1, optimized</Dynamic>
+            <Navigation>CL239</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch ec_rstn enable evaluates to constant 1, optimized</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL239 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch efc_en enable evaluates to constant 1, optimized</Dynamic>
+            <Navigation>CL239</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch efc_en enable evaluates to constant 1, optimized</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL239 :&quot;C:\git\lat_bert\rtl_sources\prbs7x1_chk.v&quot;:138:8:138:11|Latch efc_rstn enable evaluates to constant 1, optimized</Dynamic>
+            <Navigation>CL239</Navigation>
+            <Navigation>C:\git\lat_bert\rtl_sources\prbs7x1_chk.v</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Latch efc_rstn enable evaluates to constant 1, optimized</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>MT529 :&quot;c:\git\lat_bert\rtl_sources\prbs_loopback_top.v&quot;:42:0:42:5|Found inferred clock prbs_loopback_top|clk_in which controls 24 sequential elements including ctr[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\git\lat_bert\rtl_sources\prbs_loopback_top.v</Navigation>
@@ -104,9 +212,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock prbs_loopback_top|clk_in with period 2.59ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Dynamic>
+            <Dynamic>MT420 |Found inferred clock prbs_loopback_top|clk_in with period 2.66ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Dynamic>
             <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock prbs_loopback_top|clk_in with period 2.59ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Navigation>
+            <Navigation>Found inferred clock prbs_loopback_top|clk_in with period 2.66ns. Please declare a user-defined clock on object &quot;p:clk_in&quot;</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>
