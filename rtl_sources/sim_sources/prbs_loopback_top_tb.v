@@ -29,9 +29,12 @@ module prbs_loopback_top_tb();
 reg clk=1;
 reg rstn=0;
 reg tst=0;
-wire led15;
-wire x2_result;
-wire x4_result;
+wire prbs;
+wire bert_synched;
+wire heart_beat;
+//wire led15;
+//wire x2_result;
+//wire x4_result;
 
 // Create the PLL reference clock
 always #(10/2) clk <= ~clk; // 10nsec period
@@ -42,8 +45,12 @@ prbs_loopback_top DUT(
 	.clk_in(clk),
 	.rstn_in(rstn),
 	.testn_in(tst),
-	.led15(led15),
-	.led14(x2_result)
+	.prbs_in(prbs),
+	.prbs_out(prbs),
+	.heart_beat(heart_beat),
+	.bert_synched(bert_synched),
+//	.led15(led15),
+//	.led14(x2_result)
 //	.led13(x4_result)
 );
 

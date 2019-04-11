@@ -28,7 +28,8 @@ module prbs7x1_chk(
 input wire clk,
 input wire rstn,	// active low
 output wire error,	// error detected
-input wire prbs_in	// data stream to be compared
+input wire prbs_in,	// data stream to be compared
+output wire bert_synched
 );
 
 // regs

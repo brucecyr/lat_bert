@@ -24,7 +24,7 @@
 ///////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
 
-//`define SYNTHESIS
+`define SYNTHESIS
 module prbs7x1_gen(
 input wire clk,
 input wire noise,
@@ -48,7 +48,7 @@ begin
 		end
 end
 assign fb_gen=col_gen[0]^col_gen[6];
-assign prbs_out=col_gen[6] ; //| noise;
+assign prbs_out=col_gen[6] | noise;
 
 `else
 reg seq_delay = 0;
@@ -75,7 +75,7 @@ begin
 		end
 end
 assign fb_gen=col_gen[0]^col_gen[6];
-assign prbs_out=col_gen[6] ; // | noise;
+assign prbs_out=col_gen[6] | noise;
 `endif
 
 endmodule

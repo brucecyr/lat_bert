@@ -1,12 +1,14 @@
 
-fsm_encoding {7920921} sequential
+fsm_encoding {711201121} onehot
 
-fsm_state_encoding {7920921} IDLE {00}
+fsm_state_encoding {711201121} IDLE {00001}
 
-fsm_state_encoding {7920921} TEST_SYNCH {01}
+fsm_state_encoding {711201121} TEST_SYNCH {00010}
 
-fsm_state_encoding {7920921} ADD_DELAY {10}
+fsm_state_encoding {711201121} ADD_DELAY {00100}
 
-fsm_state_encoding {7920921} BERT_TEST {11}
+fsm_state_encoding {711201121} WAIT_FOR_CNT_ALIGN {01000}
 
-fsm_registers {7920921} {bert_state[1]}  {bert_state[0]} 
+fsm_state_encoding {711201121} BERT_TEST {10000}
+
+fsm_registers {711201121} {bert_state[4]}  {bert_state[3]}  {bert_state[2]}  {bert_state[1]}  {bert_state[0]} 

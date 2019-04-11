@@ -1,11 +1,11 @@
 C:\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\git\lat_bert\fpga_prj\impl0   -part LFE5UM5G_45F  -package BG381C  -grade -8    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\git\lat_bert\fpga_prj\impl0\synlog\report\lat_bert_impl0_fpga_mapper.xml  -top_level_module  prbs_loopback_top  -flow mapping  -multisrs  -oedif  C:\git\lat_bert\fpga_prj\impl0\lat_bert_impl0.edi   -autoconstraint  -freq 1.000   C:\git\lat_bert\fpga_prj\impl0\synwork\lat_bert_impl0_prem.srd  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\ecp5um5g.v  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\git\lat_bert\fpga_prj\impl0\syntmp\lat_bert_impl0.plg  -osyn  C:\git\lat_bert\fpga_prj\impl0\lat_bert_impl0.srm  -prjdir  C:\git\lat_bert\fpga_prj\impl0\  -prjname  proj_1  -log  C:\git\lat_bert\fpga_prj\impl0\synlog\lat_bert_impl0_fpga_mapper.srr  -jobname  "fpga_mapper" 
 relcom:..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\impl0 -part LFE5UM5G_45F -package BG381C -grade -8 -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile ..\synlog\report\lat_bert_impl0_fpga_mapper.xml -top_level_module prbs_loopback_top -flow mapping -multisrs -oedif ..\lat_bert_impl0.edi -autoconstraint -freq 1.000 ..\synwork\lat_bert_impl0_prem.srd -devicelib ..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\lib\lucent\ecp5um5g.v -devicelib ..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v -ologparam lat_bert_impl0.plg -osyn ..\lat_bert_impl0.srm -prjdir ..\ -prjname proj_1 -log ..\synlog\lat_bert_impl0_fpga_mapper.srr -jobname "fpga_mapper"
 rc:1 success:1 runtime:2
-file:..\lat_bert_impl0.edi|io:o|time:1553830071|size:90747|exec:0|csum:
-file:..\synwork\lat_bert_impl0_prem.srd|io:i|time:1553830070|size:7942|exec:0|csum:B72E8288BE2C875F76B884ABF4720278
+file:..\lat_bert_impl0.edi|io:o|time:1554951130|size:113090|exec:0|csum:
+file:..\synwork\lat_bert_impl0_prem.srd|io:i|time:1554951128|size:7916|exec:0|csum:B62C6BD1386AB3C83D90510D173A9BBD
 file:..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\lib\lucent\ecp5um5g.v|io:i|time:1501921416|size:89971|exec:0|csum:860F88D9F12F192B101D34E522DBD633
 file:..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1501921416|size:40584|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:lat_bert_impl0.plg|io:o|time:1553830072|size:419|exec:0|csum:
-file:..\lat_bert_impl0.srm|io:o|time:1553830071|size:11595|exec:0|csum:
-file:..\synlog\lat_bert_impl0_fpga_mapper.srr|io:o|time:1553830072|size:33020|exec:0|csum:
+file:lat_bert_impl0.plg|io:o|time:1554951130|size:419|exec:0|csum:
+file:..\lat_bert_impl0.srm|io:o|time:1554951129|size:9578|exec:0|csum:
+file:..\synlog\lat_bert_impl0_fpga_mapper.srr|io:o|time:1554951130|size:31638|exec:0|csum:
 file:..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1501924314|size:29299200|exec:1|csum:5C77397B47E7811864C32F4FC7D86D2F

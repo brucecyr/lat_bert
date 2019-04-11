@@ -1,22 +1,21 @@
 ----------------------------------------------------------------------
 Report for cell prbs_loopback_top.verilog
 
-Register bits: 67 of 43848 (0%)
+Register bits: 81 of 43848 (0%)
 PIC Latch:       0
-I/O cells:       5
+I/O cells:       7
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C       22       100.0
-                            FD1P3BX       14       100.0
-                            FD1P3DX       21       100.0
-                            FD1S3AX       26       100.0
-                            FD1S3BX        2       100.0
-                            FD1S3DX        4       100.0
+                              CCU2C       34       100.0
+                            FD1P3DX       13       100.0
+                            FD1S3AX       24       100.0
+                            FD1S3BX       16       100.0
+                            FD1S3DX       28       100.0
                                 GSR        1       100.0
-                                 IB        3       100.0
-                                INV        6       100.0
-                                 OB        2       100.0
-                           ORCALUT4       46       100.0
+                                 IB        4       100.0
+                                INV        3       100.0
+                                 OB        3       100.0
+                           ORCALUT4       48       100.0
                                 PUR        1       100.0
                                 VHI        3       100.0
                                 VLO        3       100.0
@@ -24,31 +23,30 @@ SUB MODULES
                         prbs7x1_chk        1       100.0
                         prbs7x1_gen        1       100.0
                             
-                         TOTAL           156           
+                         TOTAL           183           
 ----------------------------------------------------------------------
 Report for cell prbs7x1_chk.netlist
      Instance path:  prbs7x1_chk0
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C        9        40.9
-                            FD1P3BX        7        50.0
-                            FD1P3DX       21       100.0
-                            FD1S3BX        2       100.0
-                            FD1S3DX        4       100.0
-                                INV        2        33.3
-                           ORCALUT4       41        89.1
+                              CCU2C       21        61.8
+                            FD1P3DX       13       100.0
+                            FD1S3BX        9        56.3
+                            FD1S3DX       28       100.0
+                                INV        1        33.3
+                           ORCALUT4       45        93.8
                                 VHI        1        33.3
                                 VLO        1        33.3
                             
-                         TOTAL            88           
+                         TOTAL           119           
 ----------------------------------------------------------------------
 Report for cell prbs7x1_gen.netlist
      Instance path:  prbs7x1_gen0
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3BX        7        50.0
-                           ORCALUT4        1         2.2
+                            FD1S3BX        7        43.8
+                           ORCALUT4        2         4.2
                                 VHI        1        33.3
                                 VLO        1        33.3
                             
-                         TOTAL            10           
+                         TOTAL            11           

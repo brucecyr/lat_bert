@@ -25,18 +25,22 @@
 `timescale 1ns / 1ps
 
 module prbs_loopback_top(
-input wire clk_in,
-input wire rstn_in,		// active low
-input wire testn_in,	// active low. injects errors into prbs generated stream
-output wire led15,		// heart beat
-output wire led14		// bert error
-//output wire led13		// not used
+input wire clk_in,			// LVDS, P3/P4
+input wire rstn_in,			// active low, R1
+input wire testn_in,		// active low. injects errors into prbs generated stream
+input wire prbs_in,			// receive prbs from the channel, B12
+output wire prbs_out,		// prbs output to channel, E6
+output wire heart_beat,		// D22, PIN D18, active Low
+output wire bert_synchedn	// D21, PIN E18, active Low
+//output wire led13			// not used
 );
 
 //rename reset
 wire rstn;
 assign rstn = rstn_in;
 
+// make bert_synched active low
+assign bert_synchedn = ~bert_synched;
 
 //clk div
 reg [23:0] ctr=24'd0;
@@ -45,16 +49,16 @@ always@(posedge clk_in)
 begin
 	ctr<=ctr+1'b1;
 end
-assign led15=ctr[23];
+assign heart_beat=ctr[23];
 
-wire clk2x;		// change to clk2x from clk_div2
+//wire clk2x;		// change to clk2x from clk_div2
 //wire clk;		// change to clk from clk_div4
 wire clk = clk_in; // 10nsec period
 wire clk_div2;	// change to clk_div2 from clk_div8
 
-assign clk2x=ctr[0];
+//assign clk2x=ctr[0];
 //assign clk=ctr[1];
-assign clk_div2=ctr[2];
+assign clk_div2=ctr[0];
 
 //test pin
 wire test;
@@ -67,7 +71,7 @@ prbs7x1_gen prbs7x1_gen0(
 	.clk(clk),
 	.noise(test),
 	.rstn(rstn),
-	.prbs_out(prbs7_x1_signal)
+	.prbs_out(prbs_out)
 )/* synthesis preserve */;
 
 //prbs 7x1_chk0
@@ -75,6 +79,7 @@ prbs7x1_chk prbs7x1_chk0(
 	.clk(clk),
 	.rstn(rstn),
 	.error(led14),
-	.prbs_in(prbs7_x1_signal)
+	.prbs_in(prbs_in),
+	.bert_synched(bert_synched)
 )/* synthesis preserve */;
 endmodule

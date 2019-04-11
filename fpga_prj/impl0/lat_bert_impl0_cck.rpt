@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1796R, built Aug  4 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Thu Mar 28 20:27:50 2019
+# Written on Wed Apr 10 19:52:08 2019
 
 
 ##### DESIGN INFO #######################################################
@@ -24,14 +24,12 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                    Ending                                      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-prbs_loopback_top|clk_in                    prbs_loopback_top|clk_in                    |     1000.000         |     No paths         |     No paths         |     No paths                         
-prbs_loopback_top|clk_in                    prbs_loopback_top|ctr_derived_clock[1]      |     1000.000         |     No paths         |     No paths         |     No paths                         
-prbs_loopback_top|ctr_derived_clock[1]      prbs_loopback_top|ctr_derived_clock[1]      |     1000.000         |     No paths         |     No paths         |     No paths                         
-prbs_loopback_top|ctr_derived_clock[1]      prbs7x1_chk|bert_state_derived_clock[3]     |     1000.000         |     No paths         |     No paths         |     No paths                         
-prbs7x1_chk|bert_state_derived_clock[3]     prbs_loopback_top|ctr_derived_clock[1]      |     1000.000         |     No paths         |     No paths         |     No paths                         
-===================================================================================================================================================================================================
+Starting                     Ending                       |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                       prbs_loopback_top|clk_in     |     No paths         |     No paths         |     No paths         |     1.311                            
+prbs_loopback_top|clk_in     System                       |     1.311            |     No paths         |     No paths         |     No paths                         
+prbs_loopback_top|clk_in     prbs_loopback_top|clk_in     |     1.311            |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -39,8 +37,10 @@ prbs7x1_chk|bert_state_derived_clock[3]     prbs_loopback_top|ctr_derived_clock[
 Unconstrained Start/End Points
 ******************************
 
-p:led14
-p:led15
+p:bert_synchedn
+p:heart_beat
+p:prbs_in
+p:prbs_out
 p:rstn_in
 p:testn_in
 

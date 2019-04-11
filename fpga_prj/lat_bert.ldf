@@ -21,6 +21,9 @@
         <Source name="../rtl_sources/sim_sources/prbs_loopback_top_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
+        <Source name="impl0/impl0.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
         <Source name="lat_bert.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>

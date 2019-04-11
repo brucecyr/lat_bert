@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version M-2017.03L-SP1-1
 #--  Project file C:\git\lat_bert\fpga_prj\impl0\run_options.txt
-#--  Written on Thu Mar 28 20:27:48 2019
+#--  Written on Wed Apr 10 19:52:06 2019
 
 
 #project files

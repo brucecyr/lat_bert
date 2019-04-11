@@ -1,17 +1,20 @@
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":62:34:62:41|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":68:14:68:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":76:14:76:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":181:27:181:36|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":194:38:194:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":195:38:195:45|Unrecognized synthesis directive preserve. Verify the correct directive name.
-@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v":31:28:31:37|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
-@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal prbs_rstn; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal efc_rstn; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal efc_en; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal ec_rstn; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch generated from always block for signal ec_en; possible missing assignment in an if or case statement.
-@W: CL177 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Sharing sequential element ec_en. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch ec_rstn enable evaluates to constant 1, optimized
-@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch efc_en enable evaluates to constant 1, optimized
-@W: CL239 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":138:8:138:11|Latch efc_rstn enable evaluates to constant 1, optimized
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":69:34:69:41|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":75:14:75:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":84:14:84:21|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CG921 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":41:4:41:15|bert_synched is already declared in this scope.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":237:31:237:40|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":250:50:250:57|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":251:42:251:49|Unrecognized synthesis directive preserve. Verify the correct directive name.
+@W: CS141 :"C:\git\lat_bert\rtl_sources\prbs7x1_gen.v":34:32:34:41|Unrecognized synthesis directive dont_merge. Verify the correct directive name.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal prbs_rstn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal encr_bit_position; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal efc_rstn; possible missing assignment in an if or case statement.
+@W: CL177 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Sharing sequential element efc_rstn. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal efc_en; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal ec_rstn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal ec_en; possible missing assignment in an if or case statement.
+@W: CL177 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Sharing sequential element ec_en. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL118 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Latch generated from always block for signal bert_synched; possible missing assignment in an if or case statement.
+@W: CL177 :"C:\git\lat_bert\rtl_sources\prbs7x1_chk.v":164:8:164:11|Sharing sequential element bert_synched. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CG360 :"C:\git\lat_bert\rtl_sources\prbs_loopback_top.v":69:5:69:19|Removing wire prbs7_x1_signal, as there is no assignment to it.
 
